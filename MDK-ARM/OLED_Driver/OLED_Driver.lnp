@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"oled_driver\startup_stm32f103xb.o"
+"oled_driver\main.o"
+"oled_driver\gpio.o"
+"oled_driver\i2c.o"
+"oled_driver\stm32f1xx_it.o"
+"oled_driver\stm32f1xx_hal_msp.o"
+"oled_driver\oled.o"
+"oled_driver\my_i2c.o"
+"oled_driver\stm32f1xx_hal_gpio_ex.o"
+"oled_driver\stm32f1xx_hal_i2c.o"
+"oled_driver\stm32f1xx_hal.o"
+"oled_driver\stm32f1xx_hal_rcc.o"
+"oled_driver\stm32f1xx_hal_rcc_ex.o"
+"oled_driver\stm32f1xx_hal_gpio.o"
+"oled_driver\stm32f1xx_hal_dma.o"
+"oled_driver\stm32f1xx_hal_cortex.o"
+"oled_driver\stm32f1xx_hal_pwr.o"
+"oled_driver\stm32f1xx_hal_flash.o"
+"oled_driver\stm32f1xx_hal_flash_ex.o"
+"oled_driver\stm32f1xx_hal_exti.o"
+"oled_driver\system_stm32f1xx.o"
+--strict --scatter "OLED_Driver\OLED_Driver.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "OLED_Driver.map" -o OLED_Driver\OLED_Driver.axf
